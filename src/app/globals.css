@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes borderMove {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-border-move {
+  animation: borderMove 3s linear infinite;
+}
