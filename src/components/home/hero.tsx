@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-full mx-auto px-4 md:px-8">
         
         {/* Top Tag & Main Heading */}
         <div className="text-center max-w-4xl mx-auto">

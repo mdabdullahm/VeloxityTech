@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-white pt-8 relative sticky top-0 z-50">
+    <nav className="w-full bg-white/80 backdrop-blur-lg pt-8 relative sticky top-0 z-50">
       {/* Top Section: Logo & Branding */}
       <div className="flex flex-col items-center justify-center mb-6 px-4">
         <div className="flex items-center space-x-4 md:space-x-6">
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden absolute right-6 top-12"
         >
@@ -53,9 +53,11 @@ const Navbar = () => {
 
       {/* Bottom Section: Navigation Links (Desktop) */}
       <div className="hidden md:block max-w-7xl mx-auto">
+        {/* Navigation Links */}
         <ul className="flex justify-center items-center py-5 space-x-12">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
+            // 
             return (
               <li key={link.name}>
                 <Link
