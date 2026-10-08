@@ -218,7 +218,6 @@ const Navbar = () => {
       {/* Mobile Menu (Dropdown) */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden bg-amber-500 border-b border-gray-100 transition-all shadow-xl`}>
         <ul className="flex flex-col items-center py-6 space-y-4">
-          {navLinks.previous ? null : null}
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
