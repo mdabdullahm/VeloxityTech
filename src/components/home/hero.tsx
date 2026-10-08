@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full bg-white py-10 md:py-10 overflow-hidden">
       <div className="max-w-full mx-auto px-4 md:px-8">
         
         {/* Top Tag & Main Heading */}
